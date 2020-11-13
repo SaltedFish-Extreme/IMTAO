@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <!--头部-->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_login_pwd"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/blanchedalmond"
+        android:text="登录"
+        android:textSize="25sp" />
+
+    <!--用户名-->
+    <Button
+        android:id="@+id/btn_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:text="找回密码"
+        android:textColor="@color/navy"
+        android:textSize="25sp" />
+
+    <!--密码-->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/btn_login"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:text="免费注册"
+        android:textColor="@color/navy"
+        android:textSize="25sp" />
+
+    <!--登录按钮-->
+    <RelativeLayout
+        android:id="@+id/layout_login_header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/btn_login_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="25dp"
+            android:src="@mipmap/login_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="25dp"
+            android:text="登录"
+            android:textColor="@color/crimson"
+            android:textSize="60sp" />
+    </RelativeLayout>
+
+    <!--找回密码-->
+    <RelativeLayout
+        android:id="@+id/layout_login_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_login_header"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入登录用户名/手机号/邮箱"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/edt_username"
+            android:layout_marginTop="10dp"
+            android:background="@color/cardview_dark_background" />
+
+    </RelativeLayout>
+
+    <!--免费注册-->
+    <RelativeLayout
+        android:id="@+id/layout_login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_login_username"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入登录密码"
+            android:inputType="textPassword"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/edt_password"
+            android:layout_marginTop="10dp"
+            android:background="@color/cardview_dark_background" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
